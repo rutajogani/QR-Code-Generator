@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  font-family: Arial, sans-serif;
+  color: #fff;
+
+  background:
+    radial-gradient(circle at top left, #6c63ff55, transparent 35%),
+    radial-gradient(circle at bottom right, #00d4ff44, transparent 35%),
+    #0b0b12;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  letter-spacing: -1px;
+
+  background: linear-gradient(90deg, #ebd6d6, #8be9fd, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: fadeDown 0.8s ease;
+}
+
+p {
+  color: #aaa;
+  font-size: 1rem;
+  margin-top: -8px;
+}
+
+input {
+  width: min(90vw, 500px);
+  padding: 16px 20px;
+
+  border: 1px solid #ffffff20;
+  border-radius: 14px;
+  outline: none;
+
+  background: #ffffff0d;
+  backdrop-filter: blur(12px);
+
+  color: rgb(167, 163, 163);
+  font-size: 1rem;
+
+  transition: 0.3s ease;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 25px #8b5cf633;
+}
+
+button {
+  padding: 14px 35px;
+
+  border: none;
+  border-radius: 14px;
+
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+
+  box-shadow: 0 10px 30px #7c3aed33;
+
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px #7c3aed55;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+#qrImg {
+  width: 300px;
+  height: 300px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: rgb(197, 240, 243);
+
+  box-shadow:
+    0 0 0 8px #ffffff08,
+    0 20px 60px #00000066;
+
+  animation: pop 0.6s ease;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #qrImg {
+    width: 260px;
+    height: 260px;
+  }
+}
