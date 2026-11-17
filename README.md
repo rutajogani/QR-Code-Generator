@@ -93,8 +93,6 @@ Open `index.html` in your browser, enter a URL, and click **Submit**. 🎉
 ## 👩‍💻 Author
 
 **Ruta Jogani**
-📧 [ruta007jogani@gmail.com](mailto:ruta007jogani@gmail.com)
-
 ---
 
 <div align="center">
