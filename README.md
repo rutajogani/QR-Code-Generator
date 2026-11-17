@@ -91,9 +91,7 @@ Open `index.html` in your browser, enter a URL, and click **Submit**. 🎉
 - **`ModuleNotFoundError: qrcode`**: install it with `uv add "qrcode[pil]"`.
 
 ## 👩‍💻 Author
-
 **Ruta Jogani**
----
 
 <div align="center">
 
